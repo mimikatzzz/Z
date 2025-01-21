@@ -1,225 +1,52 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 40px auto;
-        background-color: lightgray;
-        max-width: 1200px;
-    }
-    .slide {
-        background-color: white;
-        padding: 40px;
-        margin-bottom: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px black;
-        text-align: center;
-    }
-    .content-wrapper {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        margin: 20px 0;
-    }
-    .text-content {
-        flex: 1;
-        text-align: left;
-    }
-    .image-content {
-        flex: 1;
-        text-align: center;
-    }
-    h1 {
-        color: green;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    h2 {
-        color: green;
-        margin-bottom: 30px;
-    }
-    .subtitle {
-        text-align: center;
-        color: dimgray;
-        margin-bottom: 30px;
-    }
-    .author {
-        text-align: center;
-        color: gray;
-        margin-top: 30px;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        text-align: left;
-    }
-    th, td {
-        border: 1px solid lightgray;
-        padding: 12px;
-    }
-    th {
-        background-color: whitesmoke;
-    }
-    .slide-image {
-        width: 100%;
-        height: auto;
-        max-height: 500px;
-        object-fit: cover;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    ul {
-        text-align: left;
-        margin: 0;
-        padding-left: 20px;
-    }
-    li {
-        margin: 10px 0;
-        line-height: 1.5;
-    }
-    .table-slide {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-</style>
-<title>Evolution of Websites and HTML Basics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhameer Sheraz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <!-- Slide 1 -->
-    <div class="slide">
-        <h1>Evolution of Websites and HTML Basics</h1>
-        <p class="subtitle">How it started, and the core elements</p>
-        <div class="content-wrapper">
-            <div class="text-content">
-                <h2>Welcome to Web History</h2>
-                <p>Discover the journey of how the World Wide Web came to be and the fundamental elements that power it today.</p>
-                <p class="author">By: Zhameer Sheraz U. Tampugao BSCS-1<br>Date: January 17, 2025</p>
-            </div>
-            <div class="image-content">
-                <img src="https://www.w3.org/History/1989/Image1.gif" alt="World Wide Web Logo" class="slide-image">
-            </div>
+    <nav class="navbar">
+        <a href="#" class="logo">Zhameer Sheraz</a>
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICE</a>
+            <a href="#">DESIGN</a>
+            <a href="#">CONTACT</a>
         </div>
-    </div>
+        <div class="search-container">
+            <input type="text" placeholder="">
+            <button class="search-btn">Search</button>
+        </div>
+    </nav>
 
-    <!-- Slide 2 -->
-    <div class="slide">
-        <h2>How Did a Website Come First?</h2>
-        <div class="content-wrapper">
-            <div class="image-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/First_Web_Server.jpg" alt="NeXT Computer" class="slide-image">
-            </div>
-            <div class="text-content">
-                <ul>
-                    <li>The first website was created in 1991 by Tim Berners-Lee</li>
-                    <li>It was hosted on a NeXT computer</li>
-                    <li>Purpose: To share information about the World Wide Web project</li>
-                    <li>Website URL: info.cern.ch</li>
-                </ul>
-            </div>
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Web Design & <span>Development</span> Course</h1>
+            <p>Web Design is a specialisation of the design stream. They also use HTML, CSS, WYSIWYG editing software, mark up validators etc., to create design elements.</p>
+            <a href="#" class="join-btn">JOIN US</a>
         </div>
-    </div>
 
-    <!-- Slide 3 -->
-    <div class="slide">
-        <h2>Who Did It First and How?</h2>
-        <div class="content-wrapper">
-            <div class="text-content">
-                <ul>
-                    <li>Tim Berners-Lee invented the World Wide Web</li>
-                    <li>Tools used: HTML (HyperText Markup Language)</li>
-                    <li>First website contained links to other CERN-related pages</li>
-                    <li>Technologies: HTTP protocol, web browsers, and servers</li>
-                </ul>
+        <div class="login-card">
+            <h2>Login Here</h2>
+            <input type="text" placeholder="Enter Username Here">
+            <input type="password" placeholder="Enter Password Here">
+            <button class="login-btn">Login</button>
+            <div class="signup-text">
+                Don't have an account?
+                <a href="#">Sign up here</a>
             </div>
-            <div class="image-content">
-                <img src="https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg" alt="Tim Berners-Lee" class="slide-image">
-            </div>
-        </div>
-    </div>
-
-    <!-- Slide 4 -->
-    <div class="slide">
-        <h2>20 Basic HTML Tags</h2>
-        <div class="content-wrapper">
-            <div class="text-content">
-                <table>
-                    <tr>
-                        <th>Tag</th>
-                        <th>Purpose</th>
-                    </tr>
-                    <tr><td>&lt;html&gt;</td><td>Defines the HTML document</td></tr>
-                    <tr><td>&lt;head&gt;</td><td>Contains metadata for the document</td></tr>
-                    <tr><td>&lt;title&gt;</td><td>Specifies the page title</td></tr>
-                    <tr><td>&lt;body&gt;</td><td>Contains the document's content</td></tr>
-                    <tr><td>&lt;h1&gt; to &lt;h6&gt;</td><td>Headings (H1 is largest)</td></tr>
-                    <tr><td>&lt;p&gt;</td><td>Paragraph</td></tr>
-                    <tr><td>&lt;a&gt;</td><td>Hyperlink</td></tr>
-                    <tr><td>&lt;img&gt;</td><td>Image</td></tr>
-                    <tr><td>&lt;ul&gt;</td><td>Unordered list</td></tr>
-                    <tr><td>&lt;ol&gt;</td><td>Ordered list</td></tr>
-                    <tr><td>&lt;li&gt;</td><td>List item</td></tr>
-                    <tr><td>&lt;div&gt;</td><td>Division/block container</td></tr>
-                    <tr><td>&lt;span&gt;</td><td>Inline container</td></tr>
-                    <tr><td>&lt;strong&gt;</td><td>Bold text</td></tr>
-                    <tr><td>&lt;em&gt;</td><td>Italicized text</td></tr>
-                    <tr><td>&lt;table&gt;</td><td>Table structure</td></tr>
-                    <tr><td>&lt;tr&gt;</td><td>Table row</td></tr>
-                    <tr><td>&lt;td&gt;</td><td>Table cell</td></tr>
-                    <tr><td>&lt;th&gt;</td><td>Table header</td></tr>
-                    <tr><td>&lt;form&gt;</td><td>Form for user input</td></tr>
-                </table>
-            </div>
-            <div class="image-content">
-                <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="HTML5 Badge" class="slide-image">
+            <p style="text-align: center; margin-bottom: 1rem;">Log in with</p>
+            <div class="social-login">
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">in</a>
+                <a href="#" class="social-icon">t</a>
+                <a href="#" class="social-icon">G</a>
+                <a href="#" class="social-icon">S</a>
             </div>
         </div>
-    </div>
-
-    <!-- Slide 5 -->
-    <div class="slide">
-        <h2>10 Basic Inline CSS</h2>
-        <div class="content-wrapper">
-            <div class="text-content">
-                <table>
-                    <tr>
-                        <th>Property</th>
-                        <th>Purpose</th>
-                    </tr>
-                    <tr><td>color</td><td>Sets text color</td></tr>
-                    <tr><td>font-size</td><td>Sets the font size</td></tr>
-                    <tr><td>font-family</td><td>Specifies font type</td></tr>
-                    <tr><td>background-color</td><td>Sets background color</td></tr>
-                    <tr><td>margin</td><td>Spacing outside an element</td></tr>
-                    <tr><td>padding</td><td>Spacing inside an element</td></tr>
-                    <tr><td>border</td><td>Sets border around an element</td></tr>
-                    <tr><td>text-align</td><td>Aligns text</td></tr>
-                    <tr><td>width</td><td>Specifies width</td></tr>
-                    <tr><td>height</td><td>Specifies height</td></tr>
-                </table>
-            </div>
-            <div class="image-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Logo" class="slide-image">
-            </div>
-        </div>
-    </div>
-
-    <!-- Slide 6 -->
-    <div class="slide">
-        <h2>Conclusion</h2>
-        <div class="content-wrapper">
-            <div class="text-content">
-                <ul>
-                    <li>Websites have revolutionized communication</li>
-                    <li>HTML and CSS are the building blocks of the web</li>
-                    <li>From the first website to modern web design, the journey continues</li>
-                </ul>
-            </div>
-            <div class="image-content">
-                <img src="https://ideacdn.net/idea/ct/82/myassets/blogs/html-css.jpg?revision=1581690718" alt="First Website Browser Window" class="slide-image">
-            </div>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
